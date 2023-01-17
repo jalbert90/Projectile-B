@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         // Assign the velocity to the projectile object.
         rb.velocity = projectileDirection * projectileSpeed;
-
-        Destroy(projectile, 2f);
+        // Destroy the projectile after 3 seconds.
+        Destroy(projectile, 3f);
     }
 }
